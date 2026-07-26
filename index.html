@@ -1,220 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flyer - Bootcamp Génie Logiciel</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial Black', Gadget, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
-        .main-title {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: #0b1a30;
-            line-height: 0.9;
-        }
-        .sub-title {
-            font-size: 2.8rem;
-            font-weight: 900;
-            color: #0052cc;
-            line-height: 0.9;
-        }
-        .section-header {
-            background-color: #0052cc;
-            color: white;
-            padding: 8px 20px;
-            font-weight: bold;
-            display: inline-block;
-            text-transform: uppercase;
-        }
-        .blue-title {
-            color: #0052cc;
-            font-weight: bold;
-        }
-        .tech-box {
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            padding: 12px;
-            height: 100%;
-        }
-        .tech-box-header {
-            font-weight: bold;
-            color: #0052cc;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            font-size: 0.85rem;
-        }
-        .tech-list {
-            list-style: none;
-            padding-left: 0;
-            font-family: Arial, sans-serif;
-            font-size: 0.85rem;
-            margin-bottom: 0;
-        }
-        .tech-list li {
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-        }
-        .step-circle {
-            background-color: #0052cc;
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin: 0 auto 10px auto;
-        }
-        .footer-banner {
-            border: 2px dashed #0052cc;
-            border-radius: 8px;
-            padding: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootcamp en Génie Logiciel</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="container my-4" style="max-width: 1100px;">
-    
-    <!-- EN-TÊTE DU FLYER -->
-    <header class="row align-items-center mb-5">
-        <div class="col-md-7">
-            <h1 class="main-title mb-0">BOOTCAMP</h1>
-            <div class="fw-bold my-1 text-secondary" style="font-size: 1.5rem; letter-spacing: 5px;">EN</div>
-            <h2 class="sub-title mb-4">GÉNIE LOGICIEL</h2>
-            <div class="border-top pt-2" style="border-width: 3px !important; border-color: #0052cc !important; width: 120px;"></div>
-            <p class="fw-bold fs-5 mt-2" style="color: #0052cc; font-family: Arial, sans-serif;">De la théorie à la pratique.</p>
+<div class="flyer">
+  <div class="flyer-pad">
+
+    <!-- HERO -->
+    <div class="row align-items-center mb-2">
+      <div class="col-12">
+        <div class="brand-title">
+          <div class="line1">BOOTCAMP</div>
+          <div class="line2">EN</div>
+          <div class="line3">GÉNIE</div>
+          <div class="line4">LOGICIEL</div>
         </div>
-        <div class="col-md-5 text-end">
-            <!-- Remplacer par le visuel du développeur -->
-            <img src="https://placeholder.com" alt="Illustration Génie Logiciel" class="img-fluid rounded">
-        </div>
-    </header>
+        <p class="tagline">De la <b>théorie</b> à la <b>pratique</b>.</p>
+      </div>
+    </div>
 
-    <!-- SECTION PRINCIPALE : POURQUOI & TECHNOLOGIES -->
-    <section class="row g-4 mb-5">
-        <!-- Colonne Gauche : Pourquoi rejoindre -->
-        <div class="col-md-4">
-            <div class="section-header mb-4" style="font-size: 0.9rem;">Pourquoi rejoindre ce bootcamp ?</div>
-            
-            <div class="d-flex align-items-start mb-4">
-                <div class="bg-light p-2 rounded-circle me-3"><i class="bi bi-speedometer2 fs-3 text-primary"></i></div>
-                <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">MISE À NIVEAU RIGOUREUSE</h6>
-                    <p class="text-muted small mb-0" style="font-family: Arial;">Programme intensif sur les technologies récentes, idéal pour débutants.</p>
-                </div>
-            </div>
+    <div class="divider-dot-line">
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
 
-            <div class="d-flex align-items-start mb-4">
-                <div class="bg-light p-2 rounded-circle me-3"><i class="bi bi-people fs-3 text-primary"></i></div>
-                <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">CONDITIONS RÉELLES</h6>
-                    <p class="text-muted small mb-0" style="font-family: Arial;">Travail d'équipe collaboratif comme en entreprise.</p>
-                </div>
-            </div>
+    <!-- POURQUOI + TECHNOLOGIES -->
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <p class="section-label mb-4">POURQUOI REJOINDRE<br>CE BOOTCAMP ?</p>
 
-            <div class="d-flex align-items-start mb-0">
-                <div class="bg-light p-2 rounded-circle me-3"><i class="bi bi-rocket-takeoff fs-3 text-primary"></i></div>
-                <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">PROJETS EXPLOITABLES</h6>
-                    <p class="text-muted small mb-0" style="font-family: Arial;">Développement de logiciels concrets et directement utilisables.</p>
-                </div>
-            </div>
+        <div class="why-item">
+          <div class="marker">①</div>
+          <div>
+            <h6>MISE À NIVEAU RIGOUREUSE</h6>
+            <p>Programme intensif sur les technologies récentes, idéal pour débutants.</p>
+          </div>
         </div>
 
-        <!-- Colonne Droite : Les 3 Blocs de technologies côte à côte -->
-        <div class="col-md-8">
-            <div class="section-header mb-4" style="font-size: 0.9rem;">Technologies abordées</div>
-            
-            <div class="row g-3">
-                <!-- Bloc 1 : Langages -->
-                <div class="col-md-4">
-                    <div class="tech-box">
-                        <div class="tech-box-header"><i class="bi bi-code-slash me-2"></i>LANGAGES</div>
-                        <ul class="tech-list">
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Java</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Python</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Node JS</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>TypeScript</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>SQL</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>HTML/CSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Bloc 2 : Frameworks -->
-                <div class="col-md-4">
-                    <div class="tech-box">
-                        <div class="tech-box-header"><i class="bi bi-gear me-2"></i>FRAMEWORKS</div>
-                        <ul class="tech-list">
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Spring</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Spring Boot</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Spring AI</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Angular</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Bootstrap</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Bloc 3 : Systèmes & SGBD -->
-                <div class="col-md-4">
-                    <div class="tech-box">
-                        <div class="tech-box-header"><i class="bi bi-cpu me-2"></i>SYSTÈMES</div>
-                        <ul class="tech-list">
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Linux</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>Windows</li>
-                            <li class="fw-bold mt-2 text-secondary" style="font-size: 0.75rem;">SGBD</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>MySQL</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>PostgreSQL</li>
-                            <li><i class="bi bi-chevron-right text-primary me-2"></i>MongoDB</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="why-item">
+          <div class="marker">②</div>
+          <div>
+            <h6>CONDITIONS RÉELLES</h6>
+            <p>Travail d'équipe collaboratif comme en entreprise.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- SECTION BLOCS INTERMÉDIAIRES ET ENVIRONNEMENT -->
-    <section class="row g-4 mb-5">
-        <!-- 4 blocs de compétences à gauche -->
-        <div class="col-md-9">
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <div class="tech-box">
-                        <div class="tech-box-header" style="font-size: 0.75rem;"><i class="bi bi-check2-square me-1"></i>OUTILS TESTS & QUALITÉ</div>
-                        <ul class="tech-list text-muted">
-                            <li>JUnit</li><li>Mockito</li><li>Selenium</li><li>Postman</li><li>SoapUI</li><li>SonarQube</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tech-box">
-                        <div class="tech-box-header" style="font-size: 0.75rem;"><i class="bi bi-diagram-3 me-1"></i>ARCHITECTURE & BP</div>
-                        <ul class="tech-list text-muted">
-                            <li>Hexagonale</li><li>Microservices</li><li>Structure en couche</li><li>API REST / SOAP</li><li>TDD / BDD</li><li>Principes SOLID</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tech-box">
-                        <div class="tech-box-header" style="font-size: 0.75rem;"><i class="bi bi-infinity me-1"></i>OUTILS DEVOPS</div>
-                        <ul class="tech-list text-muted">
-                            <li>Jenkins</li><li>Maven</li><li>SonarQube</li><li>Git</li><li>Kubernetes</li><li>Docker</li><li>Portainer</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="why-item">
+          <div class="marker">③</div>
+          <div>
+            <h6>PROJETS EXPLOITABLES</h6>
+            <p>Développement de logiciels concrets et directement utilisables.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-8">
+        <div class="tech-card">
+          <div class="tech-header">TECHNOLOGIES ABORDÉES</div>
+          <div class="tech-body">
+            <div class="row">
+              <div class="col-6 col-md-3 tech-col">
+                <h6>&lt;/&gt; LANGAGES</h6>
+                <ul>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Node JS</li>
+                  <li>TypeScript</li>
+                  <li>SQL</li>
+                  <li>HTML/CSS</li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3 tech-col">
+                <h6>⚙ FRAMEWORKS</h6>
+                <ul>
+                  <li>Spring</li>
+                  <li>Spring Boot</li>
+                  <li>Spring AI</li>
+                  <li>Angular</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3 tech-col">
+                <h6>🖥 SYSTÈMES</h6>
+                <ul>
+                  <li>Linux</li>
+                  <li>Windows</li>
+                </ul>
+                <h6>SGBD</h6>
+                <ul>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3 tech-col">
+                <h6>GESTIONNAIRE<br>DE VERSIONS</h6>
+                <ul>
+                  <li>GitLab</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 MINI CARDS -->
+    <div class="row g-3 mt-1">
+      <div class="col-md-3 col-sm-6">
+        <div class="mini-card">
+          <h6>✔ OUTILS TESTS ET QUALITÉ</h6>
+          <ul>
+            <li>JUnit</li>
+            <li>Mockito</li>
+            <li>Selenium</li>
+            <li>Postman</li>
+            <li>SoapUI</li>
+            <li>SonarQube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="mini-card">
+          <h6>▦ ARCHITECTURE &amp; BONNES PRATIQUES</h6>
+          <ul>
+            <li>Hexagonale</li>
+            <li>Microservices</li>
+            <li>Structure en couche</li>
+            <li>API REST</li>
+            <li>SOAP</li>
+            <li>TDD (Test Driven Development)</li>
+            <li>BDD (Behavior Driven Development)</li>
+            <li>Principes <b>SOLID</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="mini-card">
+          <h6>∞ OUTILS DEVOPS</h6>
+          <ul>
+            <li>Jenkins</li>
+            <li>Maven</li>
+            <li>SonarQube</li>
+            <li>Git</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+            <li>Portainer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 d-flex flex-column gap-3">
+        <div class="mini-card">
+          <h6>☁ CLOUD</h6>
+          <ul>
+            <li>Base du cloud (AWS)</li>
+          </ul>
+        </div>
+        <div class="mini-card">
+          <h6>◎ MÉTHODOLOGIE</h6>
+          <ul>
+            <li>Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARCOURS -->
+    <p class="parcours-title">— PARCOURS DE FORMATION —</p>
+
+    <div class="row g-3 steps-row">
+      <div class="col-6 col-md-3">
+        <div class="step-box">
+          <span class="step-num">01</span>
+          <h6>FRONT-END</h6>
+          <p>HTML, CSS, JavaScript, TypeScript, Angular, Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-box">
+          <span class="step-num">02</span>
+          <h6>FRAMEWORKS</h6>
+          <p>Spring, Spring Boot, Spring AI, Angular, Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-box">
+          <span class="step-num">03</span>
+          <h6>BACK-END</h6>
+          <p>Java, Python, Node.js, SQL, API REST, SOAP, SGBD</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-box">
+          <span class="step-num">04</span>
+          <h6>PRODUCTION</h6>
+          <p>DevOps, Docker, Kubernetes, CI/CD, Cloud (AWS)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTILS ET ENVIRONNEMENTS -->
+    <div class="mini-card mt-4">
+      <h6>✦ OUTILS &amp; ENVIRONNEMENTS</h6>
+      <div class="tools-list-row">
+        <span>VS Code</span>
+        <span>IntelliJ IDEA</span>
+        <span>MySQL Workbench</span>
+        <span>Trello</span>
+        <span>Tomcat</span>
+        <span>Jira</span>
+        <span>PyCharm</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <div class="cta-marker">🎓</div>
+      <div>
+        <h6>PRÊT À PASSER AU NIVEAU SUPÉRIEUR ?</h6>
+        <p>Rejoignez notre communauté et transformez votre avenir en devenant un <b>ingénieur logiciel</b> complet !</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-bar">
+    <div class="row align-items-center g-3">
+      <div class="col-md-3 col-6 d-flex align-items-center gap-2">
+        <div class="qr-placeholder"></div>
+        <div class="foot-item">
+          <span class="foot-value">SCANNEZ POUR REJOINDRE NOTRE COMMUNAUTÉ</span>
+          <span class="foot-label" style="color:#7CFC9A;">WHATSAPP</span>
+        </div>
+      </div>
+      <div class="col-md-2 col-6">
+        <div class="foot-item">
+          <span class="foot-value">+33 7 45 91 90 28</span>
+          <span class="foot-label">(WhatsApp uniquement)</span>
+        </div>
+      </div>
+      <div class="col-md-auto col-6">
+        <div class="foot-item">
+          <span class="foot-value">Formateurs</span>
+          <span class="foot-label">expérimentés</span>
+        </div>
+      </div>
+      <div class="col-md-auto col-6">
+        <div class="foot-item">
+          <span class="foot-value">Projets</span>
+          <span class="foot-label">concrets</span>
+        </div>
+      </div>
+      <div class="col-md-auto col-6">
+        <div class="foot-item">
+          <span class="foot-value">Accompagnement</span>
+          <span class="foot-label">personnalisé</span>
+        </div>
+      </div>
+      <div class="col-md-auto col-6">
+        <div class="foot-item">
+          <span class="foot-value">Certificat</span>
+          <span class="foot-label">reconnu</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-tagline">★ APPRENEZ. PRATIQUEZ. RÉALISEZ. ÉVOLUEZ. ★</div>
+  </div>
+</div>
 
 </body>
 </html>
