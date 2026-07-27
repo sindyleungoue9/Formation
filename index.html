@@ -1,40 +1,414 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Apprentissage de Bootstrap</title>
-  </head>
-  <body>
-     <!--Changement de thème-->
-     <div class="d-flex justify-content-start m-2">
-      <button class="btn btn-primary" onclick="changerTheme()">Thème</button>
-     </div>
- 
-        <div class="container py-1 border rounded my-5">
-            <h1 class="text-primary">Merci de visiter mon site </h1>
-            <p class="text-danger">Il contient des informations sur l'apprentissage de Bootstrap.</p>
-            <p class="text-success">Vous pouvez trouver des tutoriels, des exemples de code et des ressources utiles pour vous aider à maîtriser Bootstrap.</p>
-        <div class="d-flex justify-content-around rounded ">
-         <div class="bg-warning text-dark">Cette boîte est jaune</div>
-        <div class=" text-rose ">Cette boîte est noire</div>
-        </div>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp Génie Logiciel — De la théorie à la pratique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-img-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .hero-img-wrap img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 20px;
+      box-shadow: 0 32px 64px rgba(0,0,0,.4);
+      object-fit: cover;
+      display: block;
+    }
+    .hero-img-badge {
+      position: absolute;
+      bottom: -1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--blue-dark);
+      font-weight: 800;
+      font-size: .82rem;
+      padding: .6rem 1.25rem;
+      border-radius: 100px;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(240,165,0,.35);
+    }
+    .why-section-img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      max-height: 420px;
+      box-shadow: 0 16px 48px rgba(30,77,183,.18);
+    }
+    .stat-pill {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--white);
+      border-radius: 12px;
+      padding: .75rem 1.25rem;
+      box-shadow: var(--shadow);
+      min-width: 90px;
+    }
+    .stat-pill .num {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--blue-dark);
+      line-height: 1;
+    }
+    .stat-pill .lbl {
+      font-size: .7rem;
+      color: var(--gray-400);
+      font-weight: 500;
+      margin-top: .2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<!-- ── Hero ──────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="d-flex flex-wrap gap-2 mb-3 fade-up">
+          <span class="hero-pill"><span class="dot"></span>Inscriptions ouvertes</span>
+          <span class="hero-pill"><span class="dot"></span>Rentrée 07 Septembre</span>
+          <span class="hero-pill"><span class="dot"></span>100% à distance</span>
         </div>
-        <!-- Function to change theme -->
-        <script>
-         function changerTheme() {
-        const body = document.body;
-        const themeActuel = body.getAttribute('data-bs-theme');
-      
-          if (themeActuel === 'light') {
-           body.setAttribute('data-bs-theme', 'dark');
-          } else {
-          body.setAttribute('data-bs-theme', 'light');
-                 }
-           }
-        </script>
-  </body>
-  </html
+        <h1 class="fade-up-2">
+          BOOTCAMP<br>
+          <span style="color:var(--accent)">GÉNIE</span><br>
+          LOGICIEL
+          <span class="subtitle">De la théorie à la pratique.</span>
+        </h1>
+        <p class="tagline fade-up-3">
+          Programme intensif orienté métier pour devenir développeur logiciel complet.
+          Projets concrets, formateurs expérimentés, 3 mois de stage inclus.
+        </p>
+        <div class="d-flex flex-wrap gap-3 fade-up-3">
+          <a href="admission.html" class="btn-cta">🚀 S'inscrire maintenant</a>
+          <a href="formations.html" class="btn-outline">📋 Voir les formations</a>
+        </div>
+        <div class="d-flex flex-wrap gap-3 mt-4 fade-up-3">
+          <div class="stat-pill">
+            <span class="num">5</span>
+            <span class="lbl">Spécialisations</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">3</span>
+            <span class="lbl">Mois de stage</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">-10%</span>
+            <span class="lbl">Paiement unique</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">100%</span>
+            <span class="lbl">À distance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Image hero principale ── -->
+      <div class="col-lg-6 d-none d-lg-block fade-up-2">
+        <div class="hero-img-wrap" style="padding-bottom:1.5rem">
+          <img src="assets/dev-man.png" alt="Développeur en formation Génie Logiciel">
+          <span class="hero-img-badge">🚀 Prochaine rentrée : 07 Septembre 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Pourquoi nous — avec image femme ──────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Image gauche -->
+      <div class="col-lg-5 reveal">
+        <div style="position:relative">
+          <img src="assets/dev-woman.png" alt="Développeuse en action" class="why-section-img">
+          <!-- Carte flottante -->
+          <div style="position:absolute;bottom:1.5rem;right:-1.5rem;
+                      background:var(--white);border-radius:14px;
+                      padding:1rem 1.25rem;box-shadow:var(--shadow-lg);
+                      min-width:200px">
+            <div style="font-size:.7rem;font-weight:700;color:var(--blue-light);
+                        text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem">
+              Conditions réelles
+            </div>
+            <div style="font-size:.875rem;color:var(--gray-700);line-height:1.5">
+              Travail collaboratif<br>comme en entreprise
+            </div>
+            <div style="display:flex;gap:.4rem;margin-top:.6rem">
+              <span style="width:8px;height:8px;border-radius:50%;background:#28c840"></span>
+              <span style="width:8px;height:8px;border-radius:50%;background:var(--blue-light)"></span>
+              <span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texte droite -->
+      <div class="col-lg-7 reveal">
+        <div class="section-eyebrow">Pourquoi nous rejoindre ?</div>
+        <h2 class="section-title mb-4">Un bootcamp conçu pour votre réussite</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">🎯</div>
+              <div>
+                <h6>Mise à niveau rigoureuse</h6>
+                <p>Programme intensif sur les technologies récentes, idéal pour débutants et reconvertis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">👥</div>
+              <div>
+                <h6>Conditions réelles</h6>
+                <p>Travail d'équipe collaboratif comme en entreprise — sprints, revues de code, Git.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">🚀</div>
+              <div>
+                <h6>Projets exploitables</h6>
+                <p>Développement de logiciels concrets et directement utilisables pour votre portfolio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">🏆</div>
+              <div>
+                <h6>Certificat reconnu</h6>
+                <p>Obtenez un certificat valorisé par les entreprises à l'issue de votre formation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">🧑‍🏫</div>
+              <div>
+                <h6>Formateurs expérimentés</h6>
+                <p>Encadrement par des professionnels du secteur avec pédagogie orientée pratique.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-card">
+              <div class="why-icon">☁️</div>
+              <div>
+                <h6>03 mois de stage</h6>
+                <p>Stage sur des projets réels en développement inclus dans chaque parcours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Spécialisations résumé ─────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-eyebrow">Nos parcours</div>
+      <h2 class="section-title">5 spécialisations + 1 tronc commun</h2>
+      <p class="text-muted mt-2" style="max-width:520px;margin:auto">
+        Du débutant au développeur Full Stack, choisissez le parcours qui correspond à votre objectif.
+      </p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec">
+          <div class="card-num" style="background:var(--gray-700)">0</div>
+          <h3>Tronc Commun</h3>
+          <p>Les bases indispensables pour accéder à toutes les spécialisations.</p>
+          <div class="tech-list">
+            <span class="tech-badge">Algorithmique</span>
+            <span class="tech-badge">HTML/CSS/JS</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Linux</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 2 mois</span>
+            <span class="meta-price">75 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec">
+          <div class="card-num">1</div>
+          <h3>Front-End</h3>
+          <p>Créez des interfaces web modernes et interactives.</p>
+          <div class="tech-list">
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Bootstrap</span>
+            <span class="tech-badge">Responsive</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 4 mois + 3 mois stage</span>
+            <span class="meta-price">300 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec">
+          <div class="card-num">2</div>
+          <h3>Back-End</h3>
+          <p>Développez des applications robustes et sécurisées côté serveur.</p>
+          <div class="tech-list">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">REST API</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 4 mois + 3 mois stage</span>
+            <span class="meta-price">400 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec" style="border-color:var(--blue-light);border-width:2px">
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+            <div class="card-num mb-0">3</div>
+            <span class="card-badge">⭐ Populaire</span>
+          </div>
+          <h3>Full Stack Premium</h3>
+          <p>Le parcours complet — Tronc Commun + Front-End + Back-End.</p>
+          <div class="tech-list">
+            <span class="tech-badge">Tronc Commun</span>
+            <span class="tech-badge">Front-End</span>
+            <span class="tech-badge">Back-End</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 10 mois + 3 mois stage</span>
+            <span class="meta-price">600 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec">
+          <div class="card-num">4</div>
+          <h3>DevOps & Cloud</h3>
+          <p>Automatisez, déployez et administrez des applications sur AWS.</p>
+          <div class="tech-list">
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Kubernetes</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">CI/CD</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 4 mois + 3 mois stage</span>
+            <span class="meta-price">450 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-spec">
+          <div class="card-num">5</div>
+          <h3>Assurance Qualité</h3>
+          <p>Garantissez la qualité des applications logicielles.</p>
+          <div class="tech-list">
+            <span class="tech-badge">JUnit</span>
+            <span class="tech-badge">Selenium</span>
+            <span class="tech-badge">SonarQube</span>
+            <span class="tech-badge">TDD/BDD</span>
+          </div>
+          <div class="card-meta mt-auto">
+            <span class="meta-duration">⏱ 4 mois + 3 mois stage</span>
+            <span class="meta-price">360 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="formations.html" class="btn btn-outline-primary"
+         style="border-radius:var(--radius-sm);padding:.75rem 2rem;font-weight:700">
+        Voir toutes les formations →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA final ──────────────────────────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7 reveal">
+        <div class="section-eyebrow" style="color:var(--accent)">Prochaine rentrée</div>
+        <h2 style="color:var(--white);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem">
+          07 SEPTEMBRE 2026
+        </h2>
+        <p style="color:rgba(255,255,255,.7);font-size:1rem;max-width:480px">
+          Les places sont limitées. Réservez votre place dès aujourd'hui et commencez
+          votre parcours vers une carrière en développement logiciel.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-3">
+          <a href="admission.html" class="btn-cta">🚀 Réserver ma place</a>
+          <a href="tarifs.html" class="btn-outline">💰 Voir les tarifs</a>
+        </div>
+      </div>
+      <div class="col-lg-5 reveal">
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+                    border-radius:var(--radius);padding:2rem">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <span style="font-size:1.5rem">📅</span>
+              <div>
+                <strong style="color:var(--white);font-size:.9rem">Rentrée le 07 Septembre</strong>
+                <div style="color:rgba(255,255,255,.5);font-size:.78rem">Places limitées</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span style="font-size:1.5rem">💳</span>
+              <div>
+                <strong style="color:var(--white);font-size:.9rem">Paiement en tranches</strong>
+                <div style="color:rgba(255,255,255,.5);font-size:.78rem">-10% pour paiement comptant</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span style="font-size:1.5rem">🛡️</span>
+              <div>
+                <strong style="color:var(--white);font-size:.9rem">Remboursement garanti</strong>
+                <div style="color:rgba(255,255,255,.5);font-size:.78rem">90% jusqu'à 7 jours avant démarrage</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span style="font-size:1.5rem">📞</span>
+              <div>
+                <strong style="color:var(--white);font-size:.9rem">+33 7 45 91 90 28</strong>
+                <div style="color:rgba(255,255,255,.5);font-size:.78rem">WhatsApp uniquement</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
