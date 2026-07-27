@@ -1,0 +1,27 @@
+// ── Active nav link ───────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.navbar-bootcamp .nav-link');
+  const current = window.location.pathname.split('/').pop() || 'index.html';
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === current) link.classList.add('active');
+  });
+
+  // ── Scroll reveal ────────────────────────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+  });
+});

@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
     <link rel="stylesheet" href="style.css" />
     <title>Apprentissage de Bootstrap</title>
   </head>
-     
   <body>
-    <div class=" table-responsive container mt-2">
-      <h1 class="text-center mb-1">Tableau Bootstrap</h1>
-   <table class="table table-bordless table-hover">
-    <tr class="table-primary">
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Email</th>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>john@example.com</td>
-    </tr>
-    <tr>
-      <td>Mary</td>
-      <td>Moe</td>
-      <td>mary@example.com</td>
-    </tr>
-    <tr>
-      <td>July</td>
-      <td>Dooley</td>
-      <td>july@example.com</td>
-    </tr>
-   </table>
-   </div>
+     <!--Changement de thème-->
+     <div class="d-flex justify-content-start m-2">
+      <button class="btn btn-primary" onclick="changerTheme()">Thème</button>
+     </div>
+ 
+        <div class="container py-1 border rounded my-5">
+            <h1 class="text-primary">Merci de visiter mon site </h1>
+            <p class="text-danger">Il contient des informations sur l'apprentissage de Bootstrap.</p>
+            <p class="text-success">Vous pouvez trouver des tutoriels, des exemples de code et des ressources utiles pour vous aider à maîtriser Bootstrap.</p>
+        <div class="d-flex justify-content-around rounded ">
+         <div class="bg-warning text-dark">Cette boîte est jaune</div>
+        <div class=" text-rose ">Cette boîte est noire</div>
+        </div>  
+        </div>
+        <!-- Function to change theme -->
+        <script>
+         function changerTheme() {
+        const body = document.body;
+        const themeActuel = body.getAttribute('data-bs-theme');
+      
+          if (themeActuel === 'light') {
+           body.setAttribute('data-bs-theme', 'dark');
+          } else {
+          body.setAttribute('data-bs-theme', 'light');
+                 }
+           }
+        </script>
   </body>
-</html>
+  </html
