@@ -70,7 +70,7 @@
 </head>
 <body>
 
-<div id="navbar-placeholder"></div>
+<div id="navbar-placeholder">nnkdk</div>
 
 <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
 <section class="hero">
@@ -84,7 +84,7 @@
         </div>
         <h1 class="fade-up-2">
           BOOTCAMP<br>
-          <span style="color:var(--accent)">GÉNIE</span><br>
+          <span class="jaune">GÉNIE</span><br>
           LOGICIEL
           <span class="subtitle">De la théorie à la pratique.</span>
         </h1>
@@ -118,7 +118,7 @@
 
       <!-- ── Image hero principale ── -->
       <div class="col-lg-6 d-none d-lg-block fade-up-2">
-        <div class="hero-img-wrap" style="padding-bottom:1.5rem">
+        <div class="hero-img-wrap pb-4" >
           <img src="assets/dev-man.png" alt="Développeur en formation Génie Logiciel">
           <span class="hero-img-badge">🚀 Prochaine rentrée : 07 Septembre 2026</span>
         </div>
@@ -134,24 +134,16 @@
 
       <!-- Image gauche -->
       <div class="col-lg-5 reveal">
-        <div style="position:relative">
+        <div class="position-relative">
           <img src="assets/dev-woman.png" alt="Développeuse en action" class="why-section-img">
           <!-- Carte flottante -->
-          <div style="position:absolute;bottom:1.5rem;right:-1.5rem;
-                      background:var(--white);border-radius:14px;
-                      padding:1rem 1.25rem;box-shadow:var(--shadow-lg);
-                      min-width:200px">
-            <div style="font-size:.7rem;font-weight:700;color:var(--blue-light);
-                        text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem">
-              Conditions réelles
-            </div>
-            <div style="font-size:.875rem;color:var(--gray-700);line-height:1.5">
-              Travail collaboratif<br>comme en entreprise
-            </div>
-            <div style="display:flex;gap:.4rem;margin-top:.6rem">
-              <span style="width:8px;height:8px;border-radius:50%;background:#28c840"></span>
-              <span style="width:8px;height:8px;border-radius:50%;background:var(--blue-light)"></span>
-              <span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>
+          <div class="floatCard">
+            <div class="text-floatCard">Conditions réelles</div>
+            <div class="fs-6 text-secondary lh-base";>Travail collaboratif<br>comme en entreprise </div>
+            <div class="d-flex gap-2 mt-2" >
+              <span class="dot-sm bg-dot-green"></span>
+              <span class="dot-sm bg-dot-blue"></span>
+              <span class="dot-sm bg-dot-jaune"></span>
             </div>
           </div>
         </div>
@@ -228,14 +220,14 @@
     <div class="text-center mb-5 reveal">
       <div class="section-eyebrow">Nos parcours</div>
       <h2 class="section-title">5 spécialisations + 1 tronc commun</h2>
-      <p class="text-muted mt-2" style="max-width:520px;margin:auto">
+      <p class="text-muted mt-2 width-presentation" >
         Du débutant au développeur Full Stack, choisissez le parcours qui correspond à votre objectif.
       </p>
     </div>
     <div class="row g-3">
       <div class="col-md-6 col-lg-4 reveal">
         <div class="card-spec">
-          <div class="card-num" style="background:var(--gray-700)">0</div>
+          <div class="card-num bg-gris" ]>0</div>
           <h3>Tronc Commun</h3>
           <p>Les bases indispensables pour accéder à toutes les spécialisations.</p>
           <div class="tech-list">
@@ -287,8 +279,8 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-4 reveal">
-        <div class="card-spec" style="border-color:var(--blue-light);border-width:2px">
-          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+        <div class="card-spec border-premuim">
+          <div class= "d-flex align-items-center gap-2 mb-2">
             <div class="card-num mb-0">3</div>
             <span class="card-badge">⭐ Populaire</span>
           </div>
@@ -341,10 +333,7 @@
       </div>
     </div>
     <div class="text-center mt-4 reveal">
-      <a href="formations.html" class="btn btn-outline-primary"
-         style="border-radius:var(--radius-sm);padding:.75rem 2rem;font-weight:700">
-        Voir toutes les formations →
-      </a>
+      <a href="formations.html" class="btn btn-outline-primary btn-formation"> Voir toutes les formations →</a>
     </div>
   </div>
 </section>
@@ -353,12 +342,10 @@
 <section class="section section-dark">
   <div class="container">
     <div class="row align-items-center g-4">
-      <div class="col-lg-7 reveal">
-        <div class="section-eyebrow" style="color:var(--accent)">Prochaine rentrée</div>
-        <h2 style="color:var(--white);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem">
-          07 SEPTEMBRE 2026
-        </h2>
-        <p style="color:rgba(255,255,255,.7);font-size:1rem;max-width:480px">
+      <div class="col-lg-7 reveal">`
+        <div class="section-eyebrow jaune">Prochaine rentrée</div>
+        <h2 class="back-school"> 07 SEPTEMBRE 2026 </h2>
+        <p class="footer-text">
           Les places sont limitées. Réservez votre place dès aujourd'hui et commencez
           votre parcours vers une carrière en développement logiciel.
         </p>
@@ -368,35 +355,34 @@
         </div>
       </div>
       <div class="col-lg-5 reveal">
-        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-                    border-radius:var(--radius);padding:2rem">
+        <div class="bg-border">
           <div class="d-flex flex-column gap-3">
             <div class="d-flex align-items-center gap-3">
-              <span style="font-size:1.5rem">📅</span>
+              <span class="fs-4">📅</span>
               <div>
-                <strong style="color:var(--white);font-size:.9rem">Rentrée le 07 Septembre</strong>
-                <div style="color:rgba(255,255,255,.5);font-size:.78rem">Places limitées</div>
+                <strong class="color-text1" >Rentrée le 07 Septembre</strong>
+                <div class="color-text2">Places limitées</div>
               </div>
             </div>
             <div class="d-flex align-items-center gap-3">
-              <span style="font-size:1.5rem">💳</span>
+              <span class="fs-4">💳</span>
               <div>
-                <strong style="color:var(--white);font-size:.9rem">Paiement en tranches</strong>
-                <div style="color:rgba(255,255,255,.5);font-size:.78rem">-10% pour paiement comptant</div>
+                <strong class="color-text1">Paiement en tranches</strong>
+                <div class="color-text2">-10% pour paiement comptant</div>
               </div>
             </div>
             <div class="d-flex align-items-center gap-3">
-              <span style="font-size:1.5rem">🛡️</span>
+              <span class="fs-4">🛡️</span>
               <div>
-                <strong style="color:var(--white);font-size:.9rem">Remboursement garanti</strong>
-                <div style="color:rgba(255,255,255,.5);font-size:.78rem">90% jusqu'à 7 jours avant démarrage</div>
+                <strong class="color-text1">Remboursement garanti</strong>
+                <div class="color-text2">90% jusqu'à 7 jours avant démarrage</div>
               </div>
             </div>
             <div class="d-flex align-items-center gap-3">
-              <span style="font-size:1.5rem">📞</span>
+              <span class="fs-4">📞</span>
               <div>
-                <strong style="color:var(--white);font-size:.9rem">+33 7 45 91 90 28</strong>
-                <div style="color:rgba(255,255,255,.5);font-size:.78rem">WhatsApp uniquement</div>
+                <strong class="color-text1">+33 7 45 91 90 28</strong>
+                <div class="color-text2">WhatsApp uniquement</div>
               </div>
             </div>
           </div>
