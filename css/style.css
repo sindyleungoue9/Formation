@@ -57,8 +57,8 @@
       margin-top: .2rem;
       text-align: center;
     }
-  </style>
-    .hero-img-wrap {
+    .hero-img-wrap 
+    {
       position: relative;
       display: flex;
       justify-content: center;
@@ -371,6 +371,7 @@ img { max-width: 100%; height: auto; }
 .section { padding: 5rem 0; }
 .section-alt { background: var(--gray-100); }
 .section-dark { background: var(--blue-dark); }
+.section-formations {padding: 3rem 0 2.5rem;}
 
 /* ── Cards ─────────────────────────────────────────────────────────────────── */
 .card-spec {
@@ -961,6 +962,12 @@ img { max-width: 100%; height: auto; }
   font-size:1rem;
   max-width:480px;
 }
+.text-formations
+{
+  color:rgba(255,255,255,.7);
+  font-size:1rem;
+  max-width:540px;
+}
 .bg-border
 {
 background:rgba(255,255,255,.05);
@@ -1078,4 +1085,27 @@ font-size:.9rem;
 {
   color:rgba(255,255,255,.6);
   font-size:.75rem;
+}
+.bg-col
+{
+  background:rgba(30,77,183,.06);
+  border-radius:var(--radius-sm);
+  padding:.875rem;
+  margin-top:1rem;
+}
+.color-paragraphe
+{
+  font-size:.78rem;
+  color:var(--blue-mid);
+  margin:0;
+  line-height:1.6;
+}
+
+/* ------------------------Apparence fichier formations.html--------------------------------*/
+.big-title
+{
+  color:var(--white);
+  font-size:clamp(2rem,5vw,3rem);
+  font-weight:900;
+  margin-bottom:.5rem; 
 }
