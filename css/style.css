@@ -503,7 +503,8 @@ img { max-width: 100%; height: auto; }
 
 .tech-category ul li::before {
   content: '';
-  width: 6px; height: 6px;
+  width: 6px; 
+  height: 6px;
   border-radius: 50%;
   background: var(--blue-light);
   flex-shrink: 0;
@@ -1000,7 +1001,7 @@ font-size:.9rem;
   font-weight:900;
   margin-bottom:1rem;
 }
-.color-paragraphe 
+.color-paragraphe1
 {
   color:rgba(255,255,255,.75);
   font-size:1rem;
@@ -1108,4 +1109,87 @@ font-size:.9rem;
   font-size:clamp(2rem,5vw,3rem);
   font-weight:900;
   margin-bottom:.5rem; 
+}
+.bg-tronc
+{
+  background:var(--blue-dark);
+  border-radius:var(--radius);
+  padding:2rem;color:var(--white);
+  height:100%"
+}
+.emoiji-look
+{
+  width:48px;
+  height:48px;
+  border-radius:12px;
+  background:rgba(255,255,255,.1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.5rem;
+  margin-bottom:1rem;
+}
+.surtitle
+{
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  color:var(--accent);
+  text-transform:uppercase;
+  margin-bottom:.25rem;
+}
+.title-look
+{
+  font-size:1.4rem;
+  font-weight:800;
+  margin-bottom:.75rem;
+}
+.paragraph-look
+{
+  color:rgba(255,255,255,.7);
+  font-size:.875rem;
+  line-height:1.7;
+}
+.color-bordure{border-top:1px solid rgba(255,255,255,.1);}
+.text-look{font-size:.8rem;color:rgba(255,255,255,.5);}
+.text-custom1{font-size:1.1rem;}
+.text-custom2
+{
+  font-size:.8rem;
+  color:rgba(255,255,255,.5);
+  margin-top:.75rem;
+}
+.text-custom3{font-size:1.3rem;}
+.color-bordure2{border-color:var(--gray-200);}
+.bg-colonne
+{
+ background:linear-gradient(135deg,#1a3a6b,#2d6adf);
+ border-radius:var(--radius);
+ padding:2rem;
+ color:var(--white);
+ height:100%;
+}
+.text-custom4
+{
+ width:48px;
+ height:48px;
+ border-radius:12px;
+ background:rgba(255,255,255,.15);
+}
+.text-custom5
+{
+  font-size:.7rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.title-colonne1
+{
+  font-size:1.4rem;
+  font-weight:800;
+  margin-bottom:.75rem;
+}
+.paragraph-look2
+{
+  font-size:.875rem;
+  line-height:1.7;
 }
