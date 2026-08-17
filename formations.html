@@ -10,16 +10,20 @@
 </head>
 <body>
 
-<div id="navbar-placeholder"></div>
+<div id="navbar-placeholder"> 
+  <h1 class="big-title">
+      5 Spécialisations plus Tronc Commun
+  </h1>
+</div>
 
 <!-- ── Page Header ────────────────────────────────────────────────────────── -->
-<section style="background:var(--blue-dark);padding:3rem 0 2.5rem">
+<section class="section-dark section-formations">
   <div class="container">
-    <div class="section-eyebrow" style="color:var(--accent)">Nos formations</div>
-    <h1 style="color:var(--white);font-size:clamp(2rem,5vw,3rem);font-weight:900;margin-bottom:.5rem">
-      5 Spécialisations + Tronc Commun
+    <div class="section-eyebrow jaune" >Nos formations</div>
+    <h1 class="big-title">
+      5 Spécialisations plus Tronc Commun
     </h1>
-    <p style="color:rgba(255,255,255,.7);font-size:1rem;max-width:540px">
+    <p class="text-formations">
       Choisissez le parcours adapté à votre profil et votre ambition. Chaque formation
       inclut des projets concrets et un encadrement personnalisé.
     </p>
@@ -146,21 +150,19 @@
     <!-- Tronc commun -->
     <div class="row align-items-start g-4 mb-5 reveal">
       <div class="col-lg-4">
-        <div style="background:var(--blue-dark);border-radius:var(--radius);padding:2rem;color:var(--white);height:100%">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);
-                      display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem">🎓</div>
-          <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--accent);
-                      text-transform:uppercase;margin-bottom:.25rem">Parcours 0</div>
-          <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:.75rem">Tronc Commun</h3>
-          <p style="color:rgba(255,255,255,.7);font-size:.875rem;line-height:1.7">
+        <div class="bg-tronc">
+          <div class="emoiji-look">🎓</div>
+          <div class="surtitle">Parcours 0</div>
+          <h3 class="title-look">Tronc Commun</h3>
+          <p class="paragraph-look">
             Acquérez les bases indispensables pour accéder à toutes les spécialisations.
             Idéal pour les débutants qui souhaitent un socle solide avant de se spécialiser.
           </p>
-          <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1)">
-            <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:.25rem">Durée</div>
-            <div style="font-size:1.1rem;font-weight:700">2 mois</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-top:.75rem;margin-bottom:.25rem">Tarif</div>
-            <div style="font-size:1.3rem;font-weight:900;color:var(--accent)">75 000 FCFA</div>
+          <div class="mt-4 pt-4 color-bordure">
+            <div class="text-look mb-1">Durée</div>
+            <div class="fw-bold text-custom1">2 mois</div>
+            <div class="text-custom2 mb-1">Tarif</div>
+            <div class="jaune fw-bolder text-custom3">75 000 FCFA</div>
           </div>
         </div>
       </div>
@@ -168,14 +170,14 @@
         <h5 class="section-eyebrow mb-3">Technologies de base</h5>
         <div class="row g-2 mb-4">
           <div class="col-6">
-            <ul style="list-style:none;padding:0">
+            <ul class="p-0 list-unstyled">
               <li class="admission-check"><div class="check-icon">✓</div><span>Algorithmique & logique de programmation</span></li>
               <li class="admission-check"><div class="check-icon">✓</div><span>HTML5, CSS3, JavaScript</span></li>
               <li class="admission-check"><div class="check-icon">✓</div><span>SQL & bases de données</span></li>
             </ul>
           </div>
           <div class="col-6">
-            <ul style="list-style:none;padding:0">
+            <ul class="p-0 list-unstyled">
               <li class="admission-check"><div class="check-icon">✓</div><span>Git & GitHub</span></li>
               <li class="admission-check"><div class="check-icon">✓</div><span>Linux & VS Code</span></li>
               <li class="admission-check"><div class="check-icon">✓</div><span>Initiation aux API REST</span></li>
@@ -191,26 +193,24 @@
       </div>
     </div>
 
-    <hr style="border-color:var(--gray-200);margin:3rem 0">
+    <hr class="color-bordure2 my-5">
 
     <!-- Front-End -->
     <div class="row align-items-start g-4 mb-5 reveal">
       <div class="col-lg-4">
-        <div style="background:linear-gradient(135deg,#1a3a6b,#2d6adf);border-radius:var(--radius);padding:2rem;color:var(--white);height:100%">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.15);
-                      display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem">&lt;/&gt;</div>
-          <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--accent);
-                      text-transform:uppercase;margin-bottom:.25rem">Parcours 1</div>
-          <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:.75rem">Front-End</h3>
-          <p style="color:rgba(255,255,255,.8);font-size:.875rem;line-height:1.7">
+        <div class="bg-colonne presentation-colonne">
+          <div class="text-custom4 d-flex align-items-center justify-content-center mb-3 fs-2">&lt;/&gt;</div>
+          <div class="fw-bold jaune mb-1" >Parcours 1</div>
+          <h3 class="title-colonne1" >Front-End</h3>
+          <p class="color-ending paragraph-look2" >
             Créez des interfaces web modernes et interactives. Maîtrisez les technologies
             front-end les plus demandées par les entreprises.
           </p>
-          <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15)">
-            <div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-bottom:.25rem">Durée</div>
-            <div style="font-size:1.1rem;font-weight:700">4 mois + 3 mois de stage</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.75rem;margin-bottom:.25rem">Tarif</div>
-            <div style="font-size:1.3rem;font-weight:900;color:var(--accent)">300 000 FCFA</div>
+          <div class="bordure-haut mt-4 pt-4">
+            <div class="mb-1 MiseEnForme-text1 ">Durée</div>
+            <div class="fw-bold text-custom1">4 mois + 3 mois de stage</div>
+            <div class="MiseEnForme-text1 mb-1 marge-haut">Tarif</div>
+            <div class="text-custom3 jaune fw-bold" >300 000 FCFA</div>
           </div>
         </div>
       </div>
@@ -232,26 +232,24 @@
       </div>
     </div>
 
-    <hr style="border-color:var(--gray-200);margin:3rem 0">
+    <hr class="color-bordure2 my-5">
 
     <!-- Back-End -->
     <div class="row align-items-start g-4 mb-5 reveal">
       <div class="col-lg-4">
-        <div style="background:linear-gradient(135deg,#0a1628,#1a3a6b);border-radius:var(--radius);padding:2rem;color:var(--white);height:100%">
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);
-                      display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem">🖥️</div>
-          <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--accent);
-                      text-transform:uppercase;margin-bottom:.25rem">Parcours 2</div>
-          <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:.75rem">Back-End</h3>
-          <p style="color:rgba(255,255,255,.7);font-size:.875rem;line-height:1.7">
+        <div class="presentation-colonne bg-colonne2">
+          <div class="emoiji-look">🖥️</div>
+          <div class="surtitle">Parcours 2</div>
+          <h3 class="title-look">Back-End</h3>
+          <p class="paragraph-look">
             Développez des applications robustes et sécurisées. Maîtrisez les architectures
             modernes et les API professionnelles.
           </p>
-          <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1)">
-            <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:.25rem">Durée</div>
-            <div style="font-size:1.1rem;font-weight:700">4 mois + 3 mois de stage</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-top:.75rem;margin-bottom:.25rem">Tarif</div>
-            <div style="font-size:1.3rem;font-weight:900;color:var(--accent)">400 000 FCFA</div>
+          <div class="color-bordure mt-4 pt-4">
+            <div class="text-look mb-1">Durée</div>
+            <div class="text-custom1 fw-bold">4 mois + 3 mois de stage</div>
+            <div class="text-custom2 mb-1" >Tarif</div>
+            <div class="jaune size-texte">400 000 FCFA</div>
           </div>
         </div>
       </div>
@@ -278,34 +276,31 @@
       </div>
     </div>
 
-    <hr style="border-color:var(--gray-200);margin:3rem 0">
+    <hr class="color-bordure2 my-5">
 
     <!-- Full Stack -->
     <div class="row align-items-start g-4 mb-5 reveal">
       <div class="col-lg-4">
-        <div style="background:linear-gradient(135deg,#1e4db7,#f0a500);border-radius:var(--radius);padding:2rem;color:var(--white);height:100%;position:relative">
-          <div style="position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.2);
-                      border-radius:100px;padding:.25rem .75rem;font-size:.7rem;font-weight:700">⭐ Populaire</div>
-          <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.2);
-                      display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem">👑</div>
-          <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;color:rgba(255,255,255,.8);
-                      text-transform:uppercase;margin-bottom:.25rem">Parcours 3</div>
-          <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:.75rem">Full Stack Premium</h3>
-          <p style="color:rgba(255,255,255,.85);font-size:.875rem;line-height:1.7">
+        <div class="position-relative presentation-colonne bg-colonne3">
+          <div class="position-absolute fw-bold carte-look">⭐ Populaire</div>
+          <div class="Apparence-emoiji">👑</div>
+          <div class="apparance-text1">Parcours 3</div> 
+          <h3 class="apperence-texte2">Full Stack Premium</h3>
+          <p class="apparence-paragraph1">
             Le parcours complet pour devenir développeur Full Stack. Inclut Tronc Commun,
             Front-End et Back-End.
           </p>
-          <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.2)">
-            <div style="font-size:.8rem;color:rgba(255,255,255,.7);margin-bottom:.25rem">Durée</div>
-            <div style="font-size:1.1rem;font-weight:700">10 mois + 3 mois de stage</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.7);margin-top:.75rem;margin-bottom:.25rem">Tarif</div>
-            <div style="font-size:1.3rem;font-weight:900">600 000 FCFA</div>
+          <div class="mt-4 pt-4 bordure-haut2">
+            <div class="color-size mb-1">Durée</div>
+            <div class="text-custom1 fw-bold" >10 mois + 3 mois de stage</div>
+            <div class="mt-3 mb-1 color-size" >Tarif</div>
+            <div class="size-texte" >600 000 FCFA</div>
           </div>
         </div>
       </div>
       <div class="col-lg-8">
         <h5 class="section-eyebrow mb-3">Ce parcours comprend</h5>
-        <ul style="list-style:none;padding:0" class="mb-4">
+        <ul class="list-unstyled p-0 mb-4">
           <li class="admission-check"><div class="check-icon">✓</div><span><strong>Tronc Commun</strong> — Les bases essentielles</span></li>
           <li class="admission-check"><div class="check-icon">✓</div><span><strong>Front-End</strong> — TypeScript, Angular, Bootstrap</span></li>
           <li class="admission-check"><div class="check-icon">✓</div><span><strong>Back-End</strong> — Java, Spring Boot, API REST, Docker</span></li>
@@ -320,7 +315,7 @@
       </div>
     </div>
 
-    <hr style="border-color:var(--gray-200);margin:3rem 0">
+    <hr class="color-bordure2 my-5">
 
     <!-- DevOps + QA en 2 colonnes -->
     <div class="row g-4">
@@ -392,9 +387,7 @@
   <div class="container text-center reveal">
     <h2 class="section-title mb-3">Prêt à vous lancer ?</h2>
     <p class="text-muted mb-4">Rentrée le 07 Septembre — Places limitées</p>
-    <a href="admission.html" class="btn btn-primary fw-800"
-       style="border-radius:var(--radius-sm);padding:.875rem 2rem;font-weight:800;font-size:1rem">
-      🚀 S'inscrire maintenant
+    <a href="admission.html" class="btn btn-primary fw-800 bouton-admission">🚀 S'inscrire maintenant
     </a>
   </div>
 </section>
