@@ -1,4 +1,28 @@
-/*style generale des fichiers.html*/
+
+/* ── Variables ─────────────────────────────────────────────────────────────── */
+:root {
+  --blue-dark:   #0a1628;
+  --blue-mid:    #1a3a6b;
+  --blue-main:   #1e4db7;
+  --blue-light:  #2d6adf;
+  --accent:      #f0a500;
+  --white:       #ffffff;
+  --gray-100:    #f4f6fb;
+  --gray-200:    #e8ecf4;
+  --gray-400:    #94a3b8;
+  --gray-700:    #334155;
+  --text:        #0f172a;
+  --radius:      12px;
+  --radius-sm:   8px;
+  --shadow:      0 4px 24px rgba(30,77,183,.12);
+  --shadow-lg:   0 8px 40px rgba(10,22,40,.18);
+}
+
+/* ── Reset & Base ──────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+/*style du fichier index.html*/
     .hero-img-wrap {
       position: relative;
       display: flex;
@@ -147,27 +171,9 @@
       color: var(--blue-dark);
     }
   
-/* ── Variables ─────────────────────────────────────────────────────────────── */
-:root {
-  --blue-dark:   #0a1628;
-  --blue-mid:    #1a3a6b;
-  --blue-main:   #1e4db7;
-  --blue-light:  #2d6adf;
-  --accent:      #f0a500;
-  --white:       #ffffff;
-  --gray-100:    #f4f6fb;
-  --gray-200:    #e8ecf4;
-  --gray-400:    #94a3b8;
-  --gray-700:    #334155;
-  --text:        #0f172a;
-  --radius:      12px;
-  --radius-sm:   8px;
-  --shadow:      0 4px 24px rgba(30,77,183,.12);
-  --shadow-lg:   0 8px 40px rgba(10,22,40,.18);
-}
 
-/* ── Reset & Base ──────────────────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+
 
 body {
   font-family: '', 'Segoe UI', sans-serif;
@@ -267,7 +273,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 900;
   color: rgba(255,255,255,.04);
   font-family: monospace;
-  po-events: none;
+  pointer-events: none;
 }
 
 .hero .badge-stage {
@@ -339,7 +345,7 @@ img { max-width: 100%; height: auto; }
   gap: .5rem;
 }
 
-.hero .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
+.hero .btn-outline:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); }
 
 .hero-pills {
   display: flex;
@@ -361,12 +367,11 @@ img { max-width: 100%; height: auto; }
   border-radius: 100px;
 }
 
-.hero-pill . {
+.hero-pill .dot {
   width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--accent);
 }
-
 /* ── Section base ──────────────────────────────────────────────────────────── */
 .section { padding: 5rem 0; }
 .section-alt { background: var(--gray-100); }
@@ -979,13 +984,13 @@ padding:2rem;
 }
 .color-text1
 {
-color:var(--white);
-font-size:.9rem;
+color: var(--blue-dark);
+font-size:1rem;
 }
 .color-text2
 {
-  color:rgba(255,255,255,.5);
-  font-size:.78rem;
+  color: var(--blue-dark);
+  font-size:.9rem;
 }
 
 /* Style Css de la page Admission.html*/
@@ -1145,7 +1150,7 @@ font-size:.9rem;
 {
   font-size:1.4rem;
   font-weight:800;font-size:1.3rem;
-  font-weight:900
+  font-weight:900;
   margin-bottom:.75rem;
 }   
 .paragraph-look
@@ -1267,7 +1272,8 @@ font-size:.9rem;
   .color-paragraphe2
   {
     font-size:.8rem;
-    color:var(--gray-700);color:var(--accent)
+    color:var(--gray-700);
+    color:var(--accent);
     margin:0;
     line-height:1.6;
   }
