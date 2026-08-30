@@ -21,8 +21,19 @@
 /* ── Reset & Base ──────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 15px;
+}
 
-/*style du fichier index.html*/
+a { color: inherit; text-decoration: none; }
+
+img { max-width: 100%; height: auto; }
+
+/*style specifique du fichier index.html*/
     .hero-img-wrap {
       position: relative;
       display: flex;
@@ -42,7 +53,6 @@
       bottom: -1.25rem;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--accent);
       color: var(--blue-dark);
       font-weight: 800;
       font-size: .82rem;
@@ -81,68 +91,8 @@
       margin-top: .2rem;
       text-align: center;
     }
-    .hero-img-wrap 
-    {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
-    .hero-img-wrap img {
-      width: 100%;
-      max-width: 480px;
-      border-radius: 20px;
-      box-shadow: 0 32px 64px rgba(0,0,0,.4);
-      object-fit: cover;
-      display: block;
-    }
-    .hero-img-badge {
-      position: absolute;
-      bottom: -1.25rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--accent);
-      color: var(--blue-dark);
-      font-weight: 800;
-      font-size: .82rem;
-      padding: .6rem 1.25rem;
-      border-radius: 100px;
-      white-space: nowrap;
-      box-shadow: 0 4px 16px rgba(240,165,0,.35);
-    }
-    .why-section-img {
-      width: 100%;
-      border-radius: 16px;
-      object-fit: cover;
-      max-height: 420px;
-      box-shadow: 0 16px 48px rgba(30,77,183,.18);
-    }
-    .stat-pill {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      background: var(--white);
-      border-radius: 12px;
-      padding: .75rem 1.25rem;
-      box-shadow: var(--shadow);
-      min-width: 90px;
-    }
-    .stat-pill .num {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--blue-dark);
-      line-height: 1;
-    }
-    .stat-pill .lbl {
-      font-size: .7rem;
-      color: var(--gray-400);
-      font-weight: 500;
-      margin-top: .2rem;
-      text-align: center;
-    }
-
-    /*style generale des admissions.html*/
-    
+   
+    /*style gspecifique du fichier admissions.html*/
     .admission-hero-img {
       width: 100%;
       max-width: 420px;
@@ -171,32 +121,6 @@
       color: var(--blue-dark);
     }
   
-
-
-
-
-body {
-  font-family: '', 'Segoe UI', sans-serif;
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.6;
-  font-size: 15px;
-}
-
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; height: auto; }
-
-/* ── Typography ────────────────────────────────────────────────────────────── */
-.display-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-}
-
-.display-title .accent { color: var(--accent); }
-.display-title .blue   { color: var(--blue-light); }
-
 .section-title {
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   font-weight: 800;
@@ -315,7 +239,6 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero .btn-cta {
-  background: var(--accent);
   color: var(--blue-dark);
   font-weight: 800;
   font-size: 1rem;
@@ -370,7 +293,6 @@ img { max-width: 100%; height: auto; }
 .hero-pill .dot {
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: var(--accent);
 }
 /* ── Section base ──────────────────────────────────────────────────────────── */
 .section { padding: 5rem 0; }
@@ -607,7 +529,6 @@ img { max-width: 100%; height: auto; }
   right: -4px;
   width: 22px; height: 22px;
   border-radius: 50%;
-  background: var(--accent);
   color: var(--blue-dark);
   font-size: .65rem;
   font-weight: 900;
@@ -722,7 +643,6 @@ img { max-width: 100%; height: auto; }
 }
 
 .rentree-box .btn-inscrit {
-  background: var(--accent);
   color: var(--blue-dark);
   font-weight: 800;
   padding: .875rem 2rem;
@@ -915,17 +835,10 @@ img { max-width: 100%; height: auto; }
   height:8px;
   border-radius:50%;
 }
-.bg--green
-{
-  background:#28c840;
-}
-.bg--blue
-{
-  background:var(--blue-light);
-}
-.bg--jaune
-{
-  background:var(--accent);
+.bg--green{background:#28c840;}
+.bg--blue{ background:var(--blue-light);}
+.bg--jaune,.hero-img-badge,.hero .btn-cta,.hero-pill .dot,.process-step .step-num,.rentree-box .btn-inscrit{
+        background:var(--accent);
 }
 
 /* ligne 223*/
@@ -1086,14 +999,13 @@ font-size:1rem;
   color:rgba(255,255,255,.7);
 }
 .lenght-text{font-size:.875rem;}
-.text-ending2
+.text-ending2 ,.text-ending3
 {
   font-size:.75rem;
 }
 .text-ending3
 {
   color:rgba(255,255,255,.6);
-  font-size:.75rem;
 }
 .bg-col
 {
